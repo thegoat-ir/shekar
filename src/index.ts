@@ -52,7 +52,7 @@ async function load() {
     if (validateUsername(username)) {
       document.getElementById("app")!.innerHTML = "<h2>Loading...</h2>";
       const result = await worker.db.query(
-        `select username from usernames where username = '${username}';`
+        `select username from usernames where username = '${username}' limit 1;`
       );
       if (Array.isArray(result) && result.length) {
         if (result[0].username == username) {

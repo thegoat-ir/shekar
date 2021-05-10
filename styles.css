@@ -1,0 +1,83 @@
+body {
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #555;
+  text-align: center;
+}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
+}
+h1 a {
+  text-decoration: none;
+}
+#app {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 35vh;
+  background-color: inherit;
+  box-shadow: 0 0 80px 0 rgb(77 84 124 / 9%);
+}
+#app h2 {
+  font-size: 1em;
+  padding-top: 7rem;
+}
+#app h3 {
+  font-size: 0.9em;
+  padding-top: 2rem;
+  color: #666666;
+}
+#username {
+  margin: 2.5rem 0 0;
+  border: none;
+  border-bottom: 2px solid #dddddd;
+  width: 40%;
+  height: 25px;
+  outline: none;
+}
+#go {
+  display: block;
+  width: 15%;
+  height: 25px;
+  margin: 2rem auto;
+  text-decoration: none;
+}
+#go button {
+  width: 100%;
+  height: inherit;
+  display: block;
+  background-color: #32a6de;
+  border: none;
+  color: #ffffff;
+  border-radius: 20px;
+}
+footer {
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 1vh;
+  left: 1.5%;
+}
+a {
+  color: inherit;
+}
+@media (max-width: 1024px) {
+  #app {
+    width: 80%;
+  }
+  footer {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}

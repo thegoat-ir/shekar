@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shekar</title>
+    <script src="./dist/bundle.js"></script>
+    <script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <h1><a href="https://shekar.thegoat.ir">Shekar</a></h1>
+    <div id="app">
+      <h3>See if you've been compromised...</h3>
+      <span>@</span>
+      <input
+        id="username"
+        type="text"
+        placeholder="Username"
+        v-model="username"
+        autocomplete="off"
+      />
+      <a id="go" ref="submitButton" :href="`./?username=${username}`"
+        ><button>Go!</button></a
+      >
+    </div>
+    <footer>
+      <p>
+        © The Goat |
+        <a href="https://github.com/thegoat-ir/shekar" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          username: "",
+        },
+      });
+    </script>
+  </body>
+</html>

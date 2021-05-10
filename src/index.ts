@@ -39,7 +39,7 @@ async function load() {
         from: "inline",
         config: {
           serverMode: "full",
-          url: "./usernames.db",
+          url: "/usernames.db",
           requestChunkSize: 4096,
         },
       },
